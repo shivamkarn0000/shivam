@@ -1,0 +1,19 @@
+extends basce.pug
+
+block scripts
+//-   script(src='index.js')
+
+block style 
+ style 
+    include ../statics/style.css
+    include ../statics/contact.css
+block content 
+    div#contact
+        form(action="/contact", method="post" )   
+            h1 Contact Us
+            input(type="text" name='name' class='cnt' placeholder='Name')
+            input(type="phont" name='phone' class='cnt' placeholder='Phone Number')
+            input(type="email" name='email' class='cnt' placeholder='Emaill Address')
+            input(type="text" name='address' class='cnt' placeholder='Address')
+            button.btn 
+                | Submit

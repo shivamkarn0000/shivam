@@ -1,0 +1,55 @@
+extends basce.pug
+
+block scripts
+//-   script(src='index.js')
+
+block style 
+ style 
+    include ../statics/style.css
+    
+block content
+    section#introsection
+        div.small Welcome to Shivam's Dance Academy 
+        div.small1 Small Eat Sleep Dance Repeat
+
+    section#mission  
+        h2 Our Mission 
+        div#box-card 
+            div.card
+            h3 
+                p This is first
+                div.box
+                    div.img
+                        img(src="/statics/logo.png")
+                    div.content 
+                        p This is the best dance academy of the universe
+
+
+            div.card
+            h3 
+                p This is Second
+                div.box
+                    div.img     
+                        img(src="/statics/logo1.png")
+                    div.content
+                        p This is the best dance academy of the universe
+
+
+            div.card
+            h3 
+                p This is Third
+                div.box
+                    div.img      
+                        img(src="/statics/logo2.png")
+                    div.content
+                        p This is the best dance academy of the universe
+
+    section#sponsor    
+        h2 Our Sponsor
+        div#sponsors 
+            img(src="/statics/hp.png", alt="Network Eroor" class="spnlogo")
+            img(src="/statics/spns.png", alt="Network Eroor" class="spnlogo")
+            img(src="/statics/apple.png", alt="Network Eroor" class="spnlogo")
+            img(src="/statics/spn4.png", alt="Network Eroor" class="spnlogo")
+
+    //- include ../statics/style.css
